@@ -72,13 +72,10 @@ var i = 1
 botao.addEventListener("click", () =>{
     robotron.attributes[1].value = robos[i]
     i++
-    if(i === 5){
+    if(i === robos.length){
         i = 0
     }
 })
-
-
-console.log(robos[1])
 
 
 // robotron.addEventListener("click", (evento) => {
