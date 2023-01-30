@@ -37,12 +37,19 @@ main {
     position: relative;
 }
 
+.btn__muda-robo{
+    position: absolute;
+    z-index: 2;
+    left: 65%;
+    top: 90%;
+}
+
 .robo {
     height: 110%;
     z-index: 1;
     position: absolute;
-    left: -20%;
-    top: -5%;
+    left: -15%;
+    top: -10%;
 }
 
 .titulo {

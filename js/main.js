@@ -3,6 +3,7 @@ const subtrair = document.querySelector("#subtrair")
 
 const controle = document.querySelectorAll("[data-controle]")
 const estatisticas = document.querySelectorAll("[data-estatistica]")
+const botao = document.querySelector(".btn__muda-robo")
 const pecas = {
     "bracos": {
         "forca": 29,
@@ -36,6 +37,7 @@ const pecas = {
         "velocidade": -2
     }
 }
+var robos = ['img/megazord.png','img/robocop.png','img/optimus-prime.png','img/robotron.png','img/robotronvermelho.png']
 
 controle.forEach( (elemento) => {
     elemento.addEventListener("click", (evento) => {
@@ -60,10 +62,23 @@ function atualizaEstatisticas(peca){
     })
 }
 
+const robotron = document.querySelector("#robotron")
+robotron.addEventListener("click", (evento) => {
+    console.log(evento)
+})
+
+var i = 1
+
+botao.addEventListener("click", () =>{
+    robotron.attributes[1].value = robos[i]
+    i++
+    if(i === 5){
+        i = 0
+    }
+})
 
 
-
-
+console.log(robos[1])
 
 
 // robotron.addEventListener("click", (evento) => {
